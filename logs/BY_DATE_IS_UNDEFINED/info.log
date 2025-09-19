@@ -4616,3 +4616,228 @@ Error starting ApplicationContext. To display the condition evaluation report re
 2025-09-19T08:45:27.587+07:00 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 2025-09-19T08:45:27.590+07:00 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - SpringBootHikariPool - Shutdown initiated...
 2025-09-19T08:45:27.595+07:00 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - SpringBootHikariPool - Shutdown completed.
+2025-09-19T08:58:37.540+07:00 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-09-19T08:58:37.637+07:00 INFO  [main] c.e.v.VnpayDemo1Application - Starting VnpayDemo1Application using Java 17.0.0.1 with PID 19604 (D:\Java\Tai_lieu_thuc_tap\vnpay_demo\vnpay_demo1\vnpay_demo1\target\classes started by Admin in D:\Java\Tai_lieu_thuc_tap\vnpay_demo\vnpay_demo1\vnpay_demo1)
+2025-09-19T08:58:37.641+07:00 INFO  [main] c.e.v.VnpayDemo1Application - No active profile set, falling back to 1 default profile: "default"
+2025-09-19T08:58:39.320+07:00 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-09-19T08:58:39.342+07:00 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-19T08:58:39.586+07:00 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 216 ms. Found 1 JPA repository interface.
+2025-09-19T08:58:39.615+07:00 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-09-19T08:58:39.619+07:00 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-09-19T08:58:39.641+07:00 INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.vnpay_demo1.repository.PaymentRespository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-09-19T08:58:39.642+07:00 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2025-09-19T08:58:40.853+07:00 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-09-19T08:58:40.878+07:00 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-09-19T08:58:40.881+07:00 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-19T08:58:40.883+07:00 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-19T08:58:41.068+07:00 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-19T08:58:41.069+07:00 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3353 ms
+2025-09-19T08:58:41.716+07:00 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-19T08:58:42.049+07:00 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-09-19T08:58:42.182+07:00 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-09-19T08:58:42.946+07:00 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-19T08:58:43.060+07:00 INFO  [main] com.zaxxer.hikari.HikariDataSource - SpringBootHikariPool - Starting...
+2025-09-19T08:58:43.869+07:00 INFO  [main] com.zaxxer.hikari.pool.HikariPool - SpringBootHikariPool - Added connection com.mysql.cj.jdbc.ConnectionImpl@38ba8b45
+2025-09-19T08:58:43.872+07:00 INFO  [main] com.zaxxer.hikari.HikariDataSource - SpringBootHikariPool - Start completed.
+2025-09-19T08:58:44.079+07:00 INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (SpringBootHikariPool)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-19T08:58:45.561+07:00 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-19T08:58:45.699+07:00 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-19T08:58:46.599+07:00 INFO  [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-09-19T08:58:50.701+07:00 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-09-19T08:58:50.774+07:00 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-09-19T08:58:50.783+07:00 INFO  [main] o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: localhost:5672
+2025-09-19T08:58:50.858+07:00 INFO  [main] o.s.a.r.c.CachingConnectionFactory - Created new connection: connectionFactory#4c8ab21f:0/SimpleConnection@7427c8d4 [delegate=amqp://guest@127.0.0.1:5672/, localPort=52498]
+2025-09-19T08:58:50.876+07:00 INFO  [main] o.s.amqp.rabbit.core.RabbitAdmin - Auto-declaring a non-durable, auto-delete, or exclusive Queue (payment.queue) durable:false, auto-delete:false, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+2025-09-19T08:58:50.978+07:00 INFO  [main] c.e.v.VnpayDemo1Application - Started VnpayDemo1Application in 14.298 seconds (process running for 22.992)
+2025-09-19T09:00:20.396+07:00 INFO  [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-19T09:00:20.397+07:00 INFO  [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-09-19T09:00:20.401+07:00 INFO  [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-09-19T09:00:20.526+07:00 INFO  [http-nio-8080-exec-1] c.e.v.service.PaymentService - resultRedis_1 : null
+2025-09-19T09:00:20.681+07:00 INFO  [http-nio-8080-exec-1] c.e.v.service.PaymentService - result:PaymentRequest(tokenKey=987654, apiID=restPayment, mobile=0345225630, bankCode=970445, accountNo=0001100014211002, payDate=20200929112923, additionalData=11, debitAmount=112000, respCode=00, respDesc=SUCCESS, traceTransfer=FT19310RH6P1, messageType=1, checkSum=20f66598de682f6c39f07ddc299d1f1df63bd8549b272be5eb4589a68c8db475, orderCode=FT19310RH6P1, userName=cntest001, realAmount=11100, promotionCode=11)
+2025-09-19T09:00:20.776+07:00 INFO  [http-nio-8080-exec-1] c.e.v.service.PaymentService - Sent PaymentRequest to RabbitMQ: PaymentRequest(tokenKey=987654, apiID=restPayment, mobile=0345225630, bankCode=970445, accountNo=0001100014211002, payDate=20200929112923, additionalData=11, debitAmount=112000, respCode=00, respDesc=SUCCESS, traceTransfer=FT19310RH6P1, messageType=1, checkSum=20f66598de682f6c39f07ddc299d1f1df63bd8549b272be5eb4589a68c8db475, orderCode=FT19310RH6P1, userName=cntest001, realAmount=11100, promotionCode=11)
+2025-09-19T09:00:20.812+07:00 INFO  [http-nio-8080-exec-1] c.e.v.service.PaymentService - Received and stored in Redis: {"tokenKey":"987654","apiID":"restPayment","mobile":"0345225630","bankCode":"970445","accountNo":"0001100014211002","payDate":"20200929112923","additionalData":"11","debitAmount":112000,"respCode":"00","respDesc":"SUCCESS","traceTransfer":"FT19310RH6P1","messageType":"1","checkSum":"20f66598de682f6c39f07ddc299d1f1df63bd8549b272be5eb4589a68c8db475","orderCode":"FT19310RH6P1","userName":"cntest001","realAmount":"11100","promotionCode":"11"}
+2025-09-19T09:00:20.819+07:00 INFO  [http-nio-8080-exec-1] c.e.v.service.PaymentService - Received and stored in Redis: {"tokenKey":"987654","apiID":"restPayment","mobile":"0345225630","bankCode":"970445","accountNo":"0001100014211002","payDate":"20200929112923","additionalData":"11","debitAmount":112000,"respCode":"00","respDesc":"SUCCESS","traceTransfer":"FT19310RH6P1","messageType":"1","checkSum":"20f66598de682f6c39f07ddc299d1f1df63bd8549b272be5eb4589a68c8db475","orderCode":"FT19310RH6P1","userName":"cntest001","realAmount":"11100","promotionCode":"11"}
+2025-09-19T09:00:20.857+07:00 INFO  [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.e.v.service.PaymentService - Received and stored in Redis: {"tokenKey":"987654","apiID":"restPayment","mobile":"0345225630","bankCode":"970445","accountNo":"0001100014211002","payDate":"20200929112923","additionalData":"11","debitAmount":112000,"respCode":"00","respDesc":"SUCCESS","traceTransfer":"FT19310RH6P1","messageType":"1","checkSum":"20f66598de682f6c39f07ddc299d1f1df63bd8549b272be5eb4589a68c8db475","orderCode":"FT19310RH6P1","userName":"cntest001","realAmount":"11100","promotionCode":"11"}
+2025-09-19T15:29:17.868+07:00 INFO  [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer - Waiting for workers to finish.
+2025-09-19T15:29:18.584+07:00 INFO  [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer - Successfully waited for workers to finish.
+2025-09-19T15:29:18.595+07:00 INFO  [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-19T15:29:18.974+07:00 INFO  [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-09-19T15:29:19.040+07:00 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-19T15:29:19.070+07:00 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - SpringBootHikariPool - Shutdown initiated...
+2025-09-19T15:29:19.079+07:00 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - SpringBootHikariPool - Shutdown completed.
+2025-09-19T15:32:06.114+07:00 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-09-19T15:32:06.217+07:00 INFO  [main] c.e.v.VnpayDemo1Application - Starting VnpayDemo1Application using Java 17.0.0.1 with PID 29464 (D:\Java\Tai_lieu_thuc_tap\vnpay_demo\vnpay_demo1\vnpay_demo1\target\classes started by Admin in D:\Java\Tai_lieu_thuc_tap\vnpay_demo\vnpay_demo1\vnpay_demo1)
+2025-09-19T15:32:06.226+07:00 INFO  [main] c.e.v.VnpayDemo1Application - No active profile set, falling back to 1 default profile: "default"
+2025-09-19T15:32:07.633+07:00 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-09-19T15:32:07.635+07:00 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-19T15:32:07.828+07:00 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 179 ms. Found 1 JPA repository interface.
+2025-09-19T15:32:07.862+07:00 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-09-19T15:32:07.864+07:00 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-09-19T15:32:07.886+07:00 INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.vnpay_demo1.repository.PaymentRespository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-09-19T15:32:07.886+07:00 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2025-09-19T15:32:09.062+07:00 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-09-19T15:32:09.084+07:00 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-09-19T15:32:09.088+07:00 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-19T15:32:09.091+07:00 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-19T15:32:09.270+07:00 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-19T15:32:09.271+07:00 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2977 ms
+2025-09-19T15:32:09.791+07:00 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-19T15:32:10.078+07:00 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-09-19T15:32:10.181+07:00 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-09-19T15:32:10.697+07:00 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-19T15:32:10.750+07:00 INFO  [main] com.zaxxer.hikari.HikariDataSource - SpringBootHikariPool - Starting...
+2025-09-19T15:32:11.374+07:00 INFO  [main] com.zaxxer.hikari.pool.HikariPool - SpringBootHikariPool - Added connection com.mysql.cj.jdbc.ConnectionImpl@5c13af01
+2025-09-19T15:32:11.377+07:00 INFO  [main] com.zaxxer.hikari.HikariDataSource - SpringBootHikariPool - Start completed.
+2025-09-19T15:32:11.565+07:00 INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (SpringBootHikariPool)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-19T15:32:12.960+07:00 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-19T15:32:13.074+07:00 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-19T15:32:13.615+07:00 INFO  [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-09-19T15:32:18.128+07:00 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-09-19T15:32:18.226+07:00 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-09-19T15:32:18.237+07:00 INFO  [main] o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: localhost:5672
+2025-09-19T15:32:18.388+07:00 INFO  [main] o.s.a.r.c.CachingConnectionFactory - Created new connection: connectionFactory#79ac50fe:0/SimpleConnection@1781e2e1 [delegate=amqp://guest@127.0.0.1:5672/, localPort=63335]
+2025-09-19T15:32:18.406+07:00 INFO  [main] o.s.amqp.rabbit.core.RabbitAdmin - Auto-declaring a non-durable, auto-delete, or exclusive Queue (payment.queue) durable:false, auto-delete:false, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+2025-09-19T15:32:18.551+07:00 INFO  [main] c.e.v.VnpayDemo1Application - Started VnpayDemo1Application in 13.29 seconds (process running for 13.925)
+2025-09-19T15:32:46.228+07:00 INFO  [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-19T15:32:46.229+07:00 INFO  [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-09-19T15:32:46.229+07:00 INFO  [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-09-19T15:32:46.367+07:00 INFO  [http-nio-8080-exec-1] c.e.v.service.PaymentService - resultRedis_1 : null
+2025-09-19T15:32:46.591+07:00 INFO  [http-nio-8080-exec-1] c.e.v.service.PaymentService - result:null
+2025-09-19T15:33:53.013+07:00 INFO  [http-nio-8080-exec-4] c.e.v.service.PaymentService - resultRedis_1 : null
+2025-09-19T15:33:53.029+07:00 INFO  [http-nio-8080-exec-4] c.e.v.service.PaymentService - result:PaymentRequest(tokenKey=132456, apiID=restPayment, mobile=0345225630, bankCode=970445, accountNo=0001100014211002, payDate=20200929112923, additionalData=11, debitAmount=11200, respCode=00, respDesc=SUCCESS, traceTransfer=FT19310RH6P1, messageType=1, checkSum=4b5d4220a555c82ead4101baddbf9ad5e328f1bc8e69b1a9df7514b8cb0c6d81, orderCode=FT19310RH6P1, userName=cntest001, realAmount=11100, promotionCode=11)
+2025-09-19T15:33:53.105+07:00 INFO  [http-nio-8080-exec-4] c.e.v.service.PaymentService - Sent PaymentRequest to RabbitMQ: PaymentRequest(tokenKey=132456, apiID=restPayment, mobile=0345225630, bankCode=970445, accountNo=0001100014211002, payDate=20200929112923, additionalData=11, debitAmount=11200, respCode=00, respDesc=SUCCESS, traceTransfer=FT19310RH6P1, messageType=1, checkSum=4b5d4220a555c82ead4101baddbf9ad5e328f1bc8e69b1a9df7514b8cb0c6d81, orderCode=FT19310RH6P1, userName=cntest001, realAmount=11100, promotionCode=11)
+2025-09-19T15:33:53.168+07:00 INFO  [http-nio-8080-exec-4] c.e.v.service.PaymentService - Received and stored in Redis: {"tokenKey":"132456","apiID":"restPayment","mobile":"0345225630","bankCode":"970445","accountNo":"0001100014211002","payDate":"20200929112923","additionalData":"11","debitAmount":11200,"respCode":"00","respDesc":"SUCCESS","traceTransfer":"FT19310RH6P1","messageType":"1","checkSum":"4b5d4220a555c82ead4101baddbf9ad5e328f1bc8e69b1a9df7514b8cb0c6d81","orderCode":"FT19310RH6P1","userName":"cntest001","realAmount":"11100","promotionCode":"11"}
+2025-09-19T15:33:53.176+07:00 INFO  [http-nio-8080-exec-4] c.e.v.service.PaymentService - Received and stored in Redis: {"tokenKey":"132456","apiID":"restPayment","mobile":"0345225630","bankCode":"970445","accountNo":"0001100014211002","payDate":"20200929112923","additionalData":"11","debitAmount":11200,"respCode":"00","respDesc":"SUCCESS","traceTransfer":"FT19310RH6P1","messageType":"1","checkSum":"4b5d4220a555c82ead4101baddbf9ad5e328f1bc8e69b1a9df7514b8cb0c6d81","orderCode":"FT19310RH6P1","userName":"cntest001","realAmount":"11100","promotionCode":"11"}
+2025-09-19T15:33:53.197+07:00 INFO  [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.e.v.service.PaymentService - Received and stored in Redis: {"tokenKey":"132456","apiID":"restPayment","mobile":"0345225630","bankCode":"970445","accountNo":"0001100014211002","payDate":"20200929112923","additionalData":"11","debitAmount":11200,"respCode":"00","respDesc":"SUCCESS","traceTransfer":"FT19310RH6P1","messageType":"1","checkSum":"4b5d4220a555c82ead4101baddbf9ad5e328f1bc8e69b1a9df7514b8cb0c6d81","orderCode":"FT19310RH6P1","userName":"cntest001","realAmount":"11100","promotionCode":"11"}
+2025-09-19T15:54:02.304+07:00 INFO  [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer - Waiting for workers to finish.
+2025-09-19T15:54:02.356+07:00 INFO  [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer - Successfully waited for workers to finish.
+2025-09-19T15:54:02.358+07:00 INFO  [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-19T15:54:02.726+07:00 INFO  [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-09-19T15:54:02.755+07:00 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-19T15:54:02.759+07:00 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - SpringBootHikariPool - Shutdown initiated...
+2025-09-19T15:54:02.771+07:00 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - SpringBootHikariPool - Shutdown completed.
+2025-09-19T15:54:09.960+07:00 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-09-19T15:54:10.063+07:00 INFO  [main] c.e.v.VnpayDemo1Application - Starting VnpayDemo1Application using Java 17.0.0.1 with PID 3692 (D:\Java\Tai_lieu_thuc_tap\vnpay_demo\vnpay_demo1\vnpay_demo1\target\classes started by Admin in D:\Java\Tai_lieu_thuc_tap\vnpay_demo\vnpay_demo1\vnpay_demo1)
+2025-09-19T15:54:10.065+07:00 INFO  [main] c.e.v.VnpayDemo1Application - No active profile set, falling back to 1 default profile: "default"
+2025-09-19T15:54:11.537+07:00 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-09-19T15:54:11.540+07:00 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-19T15:54:11.800+07:00 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 242 ms. Found 1 JPA repository interface.
+2025-09-19T15:54:11.829+07:00 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-09-19T15:54:11.831+07:00 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-09-19T15:54:11.860+07:00 INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.vnpay_demo1.repository.PaymentRespository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-09-19T15:54:11.861+07:00 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+2025-09-19T15:54:13.123+07:00 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-09-19T15:54:13.143+07:00 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-09-19T15:54:13.147+07:00 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-19T15:54:13.148+07:00 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-19T15:54:13.290+07:00 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-19T15:54:13.291+07:00 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3157 ms
+2025-09-19T15:54:13.739+07:00 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-19T15:54:13.947+07:00 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-09-19T15:54:14.035+07:00 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-09-19T15:54:14.533+07:00 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-19T15:54:14.593+07:00 INFO  [main] com.zaxxer.hikari.HikariDataSource - SpringBootHikariPool - Starting...
+2025-09-19T15:54:15.215+07:00 INFO  [main] com.zaxxer.hikari.pool.HikariPool - SpringBootHikariPool - Added connection com.mysql.cj.jdbc.ConnectionImpl@38ba8b45
+2025-09-19T15:54:15.219+07:00 INFO  [main] com.zaxxer.hikari.HikariDataSource - SpringBootHikariPool - Start completed.
+2025-09-19T15:54:15.391+07:00 INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (SpringBootHikariPool)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-19T15:54:16.828+07:00 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-19T15:54:16.939+07:00 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-19T15:54:17.493+07:00 INFO  [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-09-19T15:54:22.181+07:00 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-09-19T15:54:22.290+07:00 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-09-19T15:54:22.305+07:00 INFO  [main] o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: localhost:5672
+2025-09-19T15:54:22.415+07:00 INFO  [main] o.s.a.r.c.CachingConnectionFactory - Created new connection: connectionFactory#4c8ab21f:0/SimpleConnection@7427c8d4 [delegate=amqp://guest@127.0.0.1:5672/, localPort=51908]
+2025-09-19T15:54:22.427+07:00 INFO  [main] o.s.amqp.rabbit.core.RabbitAdmin - Auto-declaring a non-durable, auto-delete, or exclusive Queue (payment.queue) durable:false, auto-delete:false, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+2025-09-19T15:54:22.547+07:00 INFO  [main] c.e.v.VnpayDemo1Application - Started VnpayDemo1Application in 13.472 seconds (process running for 14.006)
+2025-09-19T15:54:35.028+07:00 INFO  [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-19T15:54:35.028+07:00 INFO  [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-09-19T15:54:35.030+07:00 INFO  [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-09-19T15:54:35.171+07:00 INFO  [http-nio-8080-exec-1] c.e.v.service.PaymentService - resultRedis_1 : null
+2025-09-19T15:54:35.380+07:00 INFO  [http-nio-8080-exec-1] c.e.v.service.PaymentService - result:null
+2025-09-19T15:55:08.430+07:00 INFO  [http-nio-8080-exec-3] c.e.v.service.PaymentService - resultRedis_1 : {"tokenKey":"132456","apiID":"restPayment","mobile":"0345225630","bankCode":"970445","accountNo":"0001100014211002","payDate":"20200929112923","additionalData":"11","debitAmount":11200,"respCode":"00","respDesc":"SUCCESS","traceTransfer":"FT19310RH6P1","messageType":"1","checkSum":"4b5d4220a555c82ead4101baddbf9ad5e328f1bc8e69b1a9df7514b8cb0c6d81","orderCode":"FT19310RH6P1","userName":"cntest001","realAmount":"11100","promotionCode":"11"}
+2025-09-19T16:07:18.678+07:00 INFO  [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer - Waiting for workers to finish.
+2025-09-19T16:07:18.790+07:00 INFO  [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer - Successfully waited for workers to finish.
+2025-09-19T16:07:18.791+07:00 INFO  [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-19T16:07:19.153+07:00 INFO  [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-09-19T16:07:19.176+07:00 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-19T16:07:19.178+07:00 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - SpringBootHikariPool - Shutdown initiated...
+2025-09-19T16:07:19.189+07:00 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - SpringBootHikariPool - Shutdown completed.
+2025-09-19T16:07:24.635+07:00 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-09-19T16:07:24.731+07:00 INFO  [main] c.e.v.VnpayDemo1Application - Starting VnpayDemo1Application using Java 17.0.0.1 with PID 18800 (D:\Java\Tai_lieu_thuc_tap\vnpay_demo\vnpay_demo1\vnpay_demo1\target\classes started by Admin in D:\Java\Tai_lieu_thuc_tap\vnpay_demo\vnpay_demo1\vnpay_demo1)
+2025-09-19T16:07:24.732+07:00 INFO  [main] c.e.v.VnpayDemo1Application - No active profile set, falling back to 1 default profile: "default"
+2025-09-19T16:07:26.115+07:00 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-09-19T16:07:26.117+07:00 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-19T16:07:26.306+07:00 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 174 ms. Found 1 JPA repository interface.
+2025-09-19T16:07:26.340+07:00 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-09-19T16:07:26.342+07:00 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-09-19T16:07:26.376+07:00 INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.vnpay_demo1.repository.PaymentRespository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-09-19T16:07:26.377+07:00 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+2025-09-19T16:07:27.455+07:00 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-09-19T16:07:27.469+07:00 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-09-19T16:07:27.478+07:00 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-19T16:07:27.478+07:00 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-19T16:07:27.636+07:00 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-19T16:07:27.640+07:00 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2828 ms
+2025-09-19T16:07:28.113+07:00 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-19T16:07:28.291+07:00 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-09-19T16:07:28.375+07:00 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-09-19T16:07:28.779+07:00 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-19T16:07:28.821+07:00 INFO  [main] com.zaxxer.hikari.HikariDataSource - SpringBootHikariPool - Starting...
+2025-09-19T16:07:29.275+07:00 INFO  [main] com.zaxxer.hikari.pool.HikariPool - SpringBootHikariPool - Added connection com.mysql.cj.jdbc.ConnectionImpl@38ba8b45
+2025-09-19T16:07:29.278+07:00 INFO  [main] com.zaxxer.hikari.HikariDataSource - SpringBootHikariPool - Start completed.
+2025-09-19T16:07:29.421+07:00 INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (SpringBootHikariPool)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-19T16:07:30.617+07:00 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-19T16:07:30.694+07:00 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-19T16:07:31.206+07:00 INFO  [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-09-19T16:07:34.436+07:00 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-09-19T16:07:34.505+07:00 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-09-19T16:07:34.515+07:00 INFO  [main] o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: localhost:5672
+2025-09-19T16:07:34.615+07:00 INFO  [main] o.s.a.r.c.CachingConnectionFactory - Created new connection: connectionFactory#4c8ab21f:0/SimpleConnection@7427c8d4 [delegate=amqp://guest@127.0.0.1:5672/, localPort=50642]
+2025-09-19T16:07:34.625+07:00 INFO  [main] o.s.amqp.rabbit.core.RabbitAdmin - Auto-declaring a non-durable, auto-delete, or exclusive Queue (payment.queue) durable:false, auto-delete:false, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+2025-09-19T16:07:34.726+07:00 INFO  [main] c.e.v.VnpayDemo1Application - Started VnpayDemo1Application in 10.969 seconds (process running for 11.523)
+2025-09-19T16:07:42.402+07:00 INFO  [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-19T16:07:42.402+07:00 INFO  [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-09-19T16:07:42.404+07:00 INFO  [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-09-19T16:07:42.517+07:00 INFO  [http-nio-8080-exec-2] c.e.v.service.PaymentService - resultRedis_1 : null
+2025-09-19T16:07:42.678+07:00 INFO  [http-nio-8080-exec-2] c.e.v.service.PaymentService - result:PaymentRequest(tokenKey=132456, apiID=restPayment, mobile=0345225630, bankCode=970445, accountNo=0001100014211002, payDate=20200929112923, additionalData=11, debitAmount=11200, respCode=00, respDesc=SUCCESS, traceTransfer=FT19310RH6P1, messageType=1, checkSum=4b5d4220a555c82ead4101baddbf9ad5e328f1bc8e69b1a9df7514b8cb0c6d81, orderCode=FT19310RH6P1, userName=cntest001, realAmount=11100, promotionCode=11)
+2025-09-19T16:07:42.780+07:00 INFO  [http-nio-8080-exec-2] c.e.v.service.PaymentService - Sent PaymentRequest to RabbitMQ: PaymentRequest(tokenKey=132456, apiID=restPayment, mobile=0345225630, bankCode=970445, accountNo=0001100014211002, payDate=20200929112923, additionalData=11, debitAmount=11200, respCode=00, respDesc=SUCCESS, traceTransfer=FT19310RH6P1, messageType=1, checkSum=4b5d4220a555c82ead4101baddbf9ad5e328f1bc8e69b1a9df7514b8cb0c6d81, orderCode=FT19310RH6P1, userName=cntest001, realAmount=11100, promotionCode=11)
+2025-09-19T16:07:42.824+07:00 INFO  [http-nio-8080-exec-2] c.e.v.service.PaymentService - Received and stored in Redis: {"tokenKey":"132456","apiID":"restPayment","mobile":"0345225630","bankCode":"970445","accountNo":"0001100014211002","payDate":"20200929112923","additionalData":"11","debitAmount":11200,"respCode":"00","respDesc":"SUCCESS","traceTransfer":"FT19310RH6P1","messageType":"1","checkSum":"4b5d4220a555c82ead4101baddbf9ad5e328f1bc8e69b1a9df7514b8cb0c6d81","orderCode":"FT19310RH6P1","userName":"cntest001","realAmount":"11100","promotionCode":"11"}
+2025-09-19T16:07:42.832+07:00 INFO  [http-nio-8080-exec-2] c.e.v.service.PaymentService - Received and stored in Redis: {"tokenKey":"132456","apiID":"restPayment","mobile":"0345225630","bankCode":"970445","accountNo":"0001100014211002","payDate":"20200929112923","additionalData":"11","debitAmount":11200,"respCode":"00","respDesc":"SUCCESS","traceTransfer":"FT19310RH6P1","messageType":"1","checkSum":"4b5d4220a555c82ead4101baddbf9ad5e328f1bc8e69b1a9df7514b8cb0c6d81","orderCode":"FT19310RH6P1","userName":"cntest001","realAmount":"11100","promotionCode":"11"}
+2025-09-19T16:07:42.854+07:00 INFO  [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.e.v.service.PaymentService - Received and stored in Redis: {"tokenKey":"132456","apiID":"restPayment","mobile":"0345225630","bankCode":"970445","accountNo":"0001100014211002","payDate":"20200929112923","additionalData":"11","debitAmount":11200,"respCode":"00","respDesc":"SUCCESS","traceTransfer":"FT19310RH6P1","messageType":"1","checkSum":"4b5d4220a555c82ead4101baddbf9ad5e328f1bc8e69b1a9df7514b8cb0c6d81","orderCode":"FT19310RH6P1","userName":"cntest001","realAmount":"11100","promotionCode":"11"}
+2025-09-19T16:14:58.665+07:00 INFO  [http-nio-8080-exec-5] c.e.v.service.PaymentService - resultRedis_1 : null
+2025-09-19T16:14:58.675+07:00 INFO  [http-nio-8080-exec-5] c.e.v.service.PaymentService - result:null
+2025-09-19T16:15:03.064+07:00 INFO  [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer - Waiting for workers to finish.
+2025-09-19T16:15:03.124+07:00 INFO  [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer - Successfully waited for workers to finish.
+2025-09-19T16:15:03.126+07:00 INFO  [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-19T16:15:03.561+07:00 INFO  [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-09-19T16:15:03.586+07:00 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-19T16:15:03.589+07:00 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - SpringBootHikariPool - Shutdown initiated...
+2025-09-19T16:15:03.601+07:00 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - SpringBootHikariPool - Shutdown completed.

@@ -14,7 +14,8 @@ public enum ErrorCode {
     UNKNOW_ERROR("04", "Unknow error"),
     TOKEN_KEY_DUPLICATED("05", "Token key is duplicated"),
     SYSTEM_UNDER_MAINTENANCE("96", "System under maintenance"),
-    SUSPICIOUS_TRANSACTION("08", "Suspicious transaction")
+    SUSPICIOUS_TRANSACTION("08", "Suspicious transaction"),
+    DATA_NOT_FOUND("09", "Data not found")
     ;
 
     ErrorCode(String code, String message){
