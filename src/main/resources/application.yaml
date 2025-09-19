@@ -1,0 +1,75 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    url: "jdbc:mysql://localhost:3306/vnpay_demo1"
+    username: root
+    password: root
+    type: com.zaxxer.hikari.HikariDataSource
+    hikari:
+      pool-name: SpringBootHikariPool
+      maximum-pool-size: 10  # Số kết nối tối đa
+      minimum-idle: 5       # Số kết nối nhàn rỗi tối thiểu
+      idle-timeout: 30000   # Thời gian chờ nhàn rỗi (ms)
+      connection-timeout: 20000  # Thời gian chờ kết nối (ms)
+      max-lifetime: 1800000 # Thời gian sống tối đa của kết nối (ms)
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+    virtual-host: /
+    connection-timeout: 60000
+
+
+
+    # Cấu hình connection caching và pooling
+    cache:
+      connection:
+        mode: connection  # Sử dụng single connection
+        size: 1          # Chỉ 1 connection duy nhất
+      channel:
+        size: 25         # Pool 25 channels cho connection
+        checkout-timeout: 0  # Không timeout khi lấy channel
+    # Publisher configuration
+    publisher-confirm-type: correlated
+    publisher-returns: true
+    template:
+      retry:
+        enabled: true
+        initial-interval: 1000
+        max-attempts: 3
+        max-interval: 10000
+        multiplier: 1.0
+  # Redis config
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      jedis:
+        pool:
+          max-active: 10
+          max-idle: 10
+          min-idle: 1
+          max-wait: -1ms
+      timeout: 2000ms
+      database: 0
+logging:
+  config: classpath:logback-spring.xml
+  level:
+    root: INFO
+    com:
+      vnpay_demo1: DEBUG
+
+
+banks:
+  - bankCode: "970445"
+    privateKey: "ghffffffffff"
+    ips: "10.0.0.1"
+  - bankCode: "970446"
+    privateKey: "jjjjjjjj"
+    ips: "172.16.0.1"
