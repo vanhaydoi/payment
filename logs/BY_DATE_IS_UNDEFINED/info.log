@@ -4841,3 +4841,50 @@ Error starting ApplicationContext. To display the condition evaluation report re
 2025-09-19T16:15:03.586+07:00 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 2025-09-19T16:15:03.589+07:00 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - SpringBootHikariPool - Shutdown initiated...
 2025-09-19T16:15:03.601+07:00 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - SpringBootHikariPool - Shutdown completed.
+2025-09-22T08:27:52.973+07:00 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-09-22T08:27:53.097+07:00 INFO  [main] c.e.v.VnpayDemo1Application - Starting VnpayDemo1Application using Java 17.0.0.1 with PID 20020 (D:\Java\Tai_lieu_thuc_tap\vnpay_demo\vnpay_demo1\vnpay_demo1\target\classes started by Admin in D:\Java\Tai_lieu_thuc_tap\vnpay_demo\vnpay_demo1\vnpay_demo1)
+2025-09-22T08:27:53.102+07:00 INFO  [main] c.e.v.VnpayDemo1Application - No active profile set, falling back to 1 default profile: "default"
+2025-09-22T08:27:54.691+07:00 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-09-22T08:27:54.697+07:00 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-22T08:27:54.981+07:00 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 272 ms. Found 1 JPA repository interface.
+2025-09-22T08:27:55.015+07:00 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-09-22T08:27:55.015+07:00 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-09-22T08:27:55.044+07:00 INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.vnpay_demo1.repository.PaymentRespository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-09-22T08:27:55.044+07:00 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2025-09-22T08:27:56.327+07:00 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-09-22T08:27:56.344+07:00 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-09-22T08:27:56.348+07:00 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-22T08:27:56.348+07:00 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-22T08:27:56.523+07:00 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-22T08:27:56.525+07:00 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3334 ms
+2025-09-22T08:27:57.109+07:00 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-22T08:27:57.352+07:00 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-09-22T08:27:57.500+07:00 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-09-22T08:27:58.038+07:00 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-22T08:27:58.087+07:00 INFO  [main] com.zaxxer.hikari.HikariDataSource - SpringBootHikariPool - Starting...
+2025-09-22T08:27:58.701+07:00 INFO  [main] com.zaxxer.hikari.pool.HikariPool - SpringBootHikariPool - Added connection com.mysql.cj.jdbc.ConnectionImpl@41f23499
+2025-09-22T08:27:58.704+07:00 INFO  [main] com.zaxxer.hikari.HikariDataSource - SpringBootHikariPool - Start completed.
+2025-09-22T08:27:58.884+07:00 INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (SpringBootHikariPool)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-22T08:28:00.346+07:00 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-22T08:28:00.447+07:00 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-22T08:28:01.011+07:00 INFO  [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-09-22T08:28:05.676+07:00 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-09-22T08:28:05.802+07:00 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-09-22T08:28:05.818+07:00 INFO  [main] o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: localhost:5672
+2025-09-22T08:28:05.953+07:00 INFO  [main] o.s.a.r.c.CachingConnectionFactory - Created new connection: connectionFactory#5248474e:0/SimpleConnection@3d9fdf7a [delegate=amqp://guest@127.0.0.1:5672/, localPort=55329]
+2025-09-22T08:28:05.967+07:00 INFO  [main] o.s.amqp.rabbit.core.RabbitAdmin - Auto-declaring a non-durable, auto-delete, or exclusive Queue (payment.queue) durable:false, auto-delete:false, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+2025-09-22T08:28:06.090+07:00 INFO  [main] c.e.v.VnpayDemo1Application - Started VnpayDemo1Application in 13.793 seconds (process running for 15.048)
+2025-09-22T08:39:18.171+07:00 INFO  [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer - Waiting for workers to finish.
+2025-09-22T08:39:18.225+07:00 INFO  [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer - Successfully waited for workers to finish.
+2025-09-22T08:39:18.225+07:00 INFO  [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-22T08:39:18.584+07:00 INFO  [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-09-22T08:39:18.602+07:00 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-22T08:39:18.604+07:00 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - SpringBootHikariPool - Shutdown initiated...
+2025-09-22T08:39:18.615+07:00 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - SpringBootHikariPool - Shutdown completed.

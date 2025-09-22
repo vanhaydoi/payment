@@ -31,7 +31,7 @@ import static com.example.vnpay_demo1.util.CheckSumUtil.calculateResponseCheckSu
 @RequiredArgsConstructor
 @Slf4j
 @FieldDefaults(level = AccessLevel.PRIVATE, makeFinal = true)
-public class PaymentService {
+public class PaymentService implements PaymentServiceImpl {
 
     ValidationService validationService;
     BankService bankService;
@@ -107,7 +107,7 @@ public class PaymentService {
         }
 
     }
-
+    @Override
     public ApiResponse<Object> getOnePayment(String bankcode, String tokenKey){
         Gson gson = new Gson();
         var resultRedis = redisConfig.redisTemplate().opsForHash().get(bankcode, tokenKey);
