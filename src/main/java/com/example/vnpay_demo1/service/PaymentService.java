@@ -53,6 +53,7 @@ public class PaymentService implements PaymentServiceImpl {
     }
 
     // Lưu data request vào trong redis
+    @Override
     public PaymentResponse create(PaymentRequest request){
         PaymentResponse validationResult = validationService.validateRequest(request);
 
@@ -116,24 +117,32 @@ public class PaymentService implements PaymentServiceImpl {
         if (resultRedis == null){
             PaymentRequest result = paymentMapper.toPaymentRequest(paymentRespository.findByBankCodeAndTokenKey(bankcode, tokenKey));
             log.info("result:{}", result);
-            if (result == null) {
-//                throw new RuntimeException("Payment not found in DB");
+            PaymentResponse validationResult = validationService.validateRequest(result);
+            if (validationResult.getCode().equals(ErrorCode.SUCCESS.getCode())){
+                if (result == null) {
+                    return ApiResponse.builder()
+                            .code(ErrorCode.DATA_NOT_FOUND.getCode())
+                            .message(ErrorCode.DATA_NOT_FOUND.getMessage())
+                            .result(Collections.emptyMap())
+                            .build();
+                }
+
+                // Gửi qua RabbitMQ producer
+                rabbitMQProducer(result);
+                //
+                rabbitMQConsumer(result);
                 return ApiResponse.builder()
-                        .code(ErrorCode.DATA_NOT_FOUND.getCode())
-                        .message(ErrorCode.DATA_NOT_FOUND.getMessage())
+                        .code(ErrorCode.SUCCESS.getCode())
+                        .message(ErrorCode.SUCCESS.getMessage())
+                        .result(gson.fromJson(rabbitMQConsumer(result), PaymentRequest.class))
+                        .build();
+            } else {
+                return ApiResponse.builder()
+                        .code(validationResult.getCode())
+                        .message(validationResult.getMessage())
                         .result(Collections.emptyMap())
                         .build();
             }
-
-            // Gửi qua RabbitMQ producer
-            rabbitMQProducer(result);
-            //
-            rabbitMQConsumer(result);
-            return ApiResponse.builder()
-                    .code(ErrorCode.SUCCESS.getCode())
-                    .message(ErrorCode.SUCCESS.getMessage())
-                    .result(gson.fromJson(rabbitMQConsumer(result), PaymentRequest.class))
-                    .build();
         } else {
             return ApiResponse.builder()
                     .code(ErrorCode.SUCCESS.getCode())
